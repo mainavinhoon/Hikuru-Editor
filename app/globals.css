@@ -2,20 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+.public-DraftStyleDefault-RED {
+  color: red;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.public-DraftEditor-content .public-DraftStyleDefault-block {
+  margin-bottom: 1rem; 
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.public-DraftEditor-content .public-DraftStyleDefault-block.RichEditor-root-HEADER_ONE {
+  margin-bottom: 2rem; /* Adjust margin for headers */
 }
