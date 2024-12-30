@@ -133,7 +133,11 @@ function MyEditor() {
     return null; 
   };
 
-  if (!isMounted || !editorState) {
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if (!isMounted ) {
     return <div>Loading...</div>; // Placeholder until the client renders
   }
 
